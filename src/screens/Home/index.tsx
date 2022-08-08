@@ -3,6 +3,7 @@ import * as S from  './styles'
 import LogoSvg from '../../assets/logo.svg'
 import { RFValue } from 'react-native-responsive-fontsize'
 import { TaskInfo } from '../../components/TaskInfo'
+import { EmptyTask } from '../../components/EmptyTask'
 
 
 export function Home() {
@@ -36,6 +37,8 @@ export function Home() {
             count='0'
           />
         </S.TaskInfoContent>
+
+        <EmptyTask />
 
         
 
