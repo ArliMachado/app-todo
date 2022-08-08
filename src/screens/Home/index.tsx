@@ -1,7 +1,8 @@
-import { Text } from 'react-native'
+import { Text, View } from 'react-native'
 import * as S from  './styles'
 import LogoSvg from '../../assets/logo.svg'
 import { RFValue } from 'react-native-responsive-fontsize'
+import { TaskInfo } from '../../components/TaskInfo'
 
 
 export function Home() {
@@ -14,7 +15,30 @@ export function Home() {
 
         </S.Header>
       <S.Container>
-        <Text>Home</Text>
+
+        <S.FormTask>
+          <S.Input placeholder='Adicione uma nova tarefa' />
+          <S.AddButton>
+            <S.AddIcon name="plus-circle" />
+          </S.AddButton>
+        </S.FormTask>
+
+        <S.TaskInfoContent>
+          <TaskInfo 
+            title='Criadas'
+            colorTitle='blue'
+            count='0'
+          />
+
+          <TaskInfo 
+            title='Concluídas'
+            colorTitle='purple'
+            count='0'
+          />
+        </S.TaskInfoContent>
+
+        
+
       </S.Container>
     </>
   )

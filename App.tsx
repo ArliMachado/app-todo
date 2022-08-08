@@ -20,12 +20,9 @@ export default function App() {
     Inter_400Regular,
     Inter_700Bold
   })
-
-  const onLayoutRootView = useCallback(async () => {
     if (fontsLoaded) {
-      await SplashScreen.hideAsync();
+      SplashScreen.hideAsync();
     }
-  }, []);
 
   if (!fontsLoaded) {
     return null

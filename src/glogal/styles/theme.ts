@@ -22,9 +22,9 @@ export default {
     regular: 'Inter_400Regular',
     bold: 'Inter_700Bold',
     sizes:{
-      small: '0.75rem',
-      medium: '0.875rem',
-      regular: '1rem'
+      small: 12,
+      medium: 14,
+      regular: 16
     },
   },
 }
